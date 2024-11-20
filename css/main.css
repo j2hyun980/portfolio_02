@@ -242,13 +242,11 @@
   #ride .ride_list li:first-child{margin: 0;}
   #ride .ride_list li:last-child{transform: translateY(0);}
   #ride .ride_list li .tit{padding: 0 0 10px; font-size: 1.2rem;}
-  #ride .ride_list li h5{font-size: 1.4rem;}
   #ride .ride_list li h5+p{margin: 5px 0 15px; font-size: 1.4rem;}
   #ride .ride_list li .date{font-size: 1.2rem;}
   #ride .ride_list li .btn_plus{right: 16px; bottom: 0;}
 
   #ride .ride_list li.ride_img .swiper-slide .tit{padding: 0 0 40px; font-size: 1.2rem;}
-  #ride .ride_list li.ride_img .swiper-slide h5{font-size: 1.4rem;}
   #ride .ride_list li.ride_img .swiper-slide p{font-size: 1.2rem;}
 }
 
@@ -313,7 +311,7 @@
   #notice .news_list .news_card:nth-child(6){height: 300px; transform: translateY(-100px);}
   
   #notice .news_list .news_card .tit{display: block; padding: 0 0 20px; font-weight: 600; font-size: 1.4rem; color: var(--horse-green);}
-  #notice .news_list .news_card h5 a{ margin: 0 0 15px; font-weight: 600; font-size: 1.6rem; display : -webkit-box; width: 100%; height: 24px; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; text-overflow: ellipsis;}
+  #notice .news_list .news_card h5{ margin: 0 0 15px; font-weight: 600; font-size: 1.6rem; display : -webkit-box; width: 100%; height: 24px; -webkit-box-orient: vertical; -webkit-line-clamp: 1; overflow: hidden; text-overflow: ellipsis;}
   #notice .news_list .news_card p{height: 100px; font-size: 1.4rem; -webkit-line-clamp: 5;}
   #notice .news_list .news_card .date{font-size: 1.4rem;}
   #notice .news_list .news_card:hover:nth-child(6){transform: translateY(-100px); border: 1px solid var(--horse-black);}
@@ -333,7 +331,7 @@
   #notice .news_list .news_card:nth-child(6){display: none;}
 
   #notice .news_list .news_card .tit{padding: 0 0 10px; font-size: 1.2rem;}
-  #notice .news_list .news_card h5 a{margin: 0;font-size: 1.4rem;}
+  #notice .news_list .news_card h5{display: block; height: auto; margin: 0; font-size: 1.6rem;}
   #notice .news_list .news_card p{height: 85px; margin: 10px 0; font-size: 1.4rem; -webkit-line-clamp: 4;}
   #notice .news_list .news_card .date{margin: 0; font-size: 1.2rem;}
   #notice .news_list .news_card:nth-child(5) .date{margin: 20px 0 0;}

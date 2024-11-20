@@ -52,7 +52,6 @@ button{font-family: var(--main-font);}
 #header .btn_ham{display: none; width: 22px; height: 22px; background: url(../img/main/icon_ham.png) no-repeat center; font-size: 0; cursor: pointer;}
 
 /*depth2*/
-
 #header .h_btm .gnb > li .depth2{position: absolute; left: 0; bottom: -40px; display: flex;  width: 750px; gap: 0 70px; z-index: 5;}
 #header .h_btm .gnb > li .depth2 li:hover a{color: var(--horse-green);}
 #header .h_btm .gnb > li .depth2 li.active a{color: var(--horse-green);}
@@ -207,6 +206,7 @@ input::-webkit-search-cancel-button{display: none;}
   #footer .f_btm{font-size: 1.2rem; gap: 10px;}
   #footer .f_btm .tel{justify-content: center; gap: 10px;}
   #footer .f_btm address{justify-content: center; gap: 10px;}
+  #footer .f_btm::before{top: -20px;}
 }
 
 /*gotop-btn*/
