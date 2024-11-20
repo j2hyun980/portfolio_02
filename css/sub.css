@@ -1,0 +1,398 @@
+@charset "utf-8";
+
+h3{position: relative; padding: 0 0 80px; font-weight: 600; font-size: 3rem; color: var(--horse-green);}
+h3::after{content: ''; position: absolute; left: 0; bottom: 65px; display: block; width: 100%; height: 1px; background: var(--horse-green);}
+
+@media(max-width:900px){
+  h3{padding: 0 0 30px; font-size: 1.8rem;}
+  h3::after{bottom: 20px;}
+}
+@media(max-width:500px){
+  h3{padding: 0 0 20px; font-size: 1.6rem;}
+  h3::after{bottom: 15px;}
+}
+
+/*sub-visual*/
+.sub_visual{position: relative; height: 430px; text-align: center;}
+.sub_visual h2{position: relative; width: 100%; padding: 130px 0 60px; color: #fff; font-weight: 600; font-size: 5rem;}
+.sub_visual h2::after{content: ''; position: absolute; left: 50%; bottom: 35px; display: block; width: 400px; height: 1px; background: #fff; transform: translateX(-50%);}
+.sub_visual h2+p{color: #fff; font-weight: 600; font-size: 2rem;}
+
+.sub_visual .lnb_area{position: absolute; left: 3%; top: 5%; display: none; z-index: 10;}
+.sub_visual .lnb_area > li:first-child{width: 110px;}
+.sub_visual .lnb_area > li{padding: 10px 5px; width: 130px;}
+.sub_visual .lnb_area > li > a{color: #fff; font-weight: 600; pointer-events: none;}
+.sub_visual .lnb_area > li > a img{display: inline-block; padding-left: 5px; vertical-align: middle;}
+.sub_visual .lnb_area > li ol{display: none; background: rgba(0,0,0,0.8);}
+.sub_visual .lnb_area > li ol li a{display: block; padding: 5px 0 0; color: #fff; font-weight: 600;}
+.sub_visual .lnb_area > li ol li:last-child a{padding: 5px 0;}
+
+.entrance_visual{background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../img/sub/sub_mb_park.jpg) no-repeat center / cover;}
+.parking_visual{position: relative; height: 430px; text-align: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../img/sub/sub_mb_parking.jpg) no-repeat center / cover;}
+.program_visual{background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/sub/sub_mb_program.png) no-repeat center / cover;}
+.reserve_visual{background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../img/sub/sub_mb_ground.jpg) no-repeat center / cover;}
+
+@media(max-width:900px){
+  .sub_visual{height: 330px; padding: 0 24px;}
+  .sub_visual h2{padding: 100px 0 60px; font-size: 2.2rem}
+  .sub_visual h2::after{width: 177px;}
+  .sub_visual h2+p{font-size: 1.6rem}
+  .sub_visual .lnb_area{display: flex;}
+}
+@media(max-width:500px){
+  .sub_visual{height: 230px; padding: 0 16px;}
+  .sub_visual h2{padding: 70px 0 30px; font-size: 1.6rem}
+  .sub_visual h2::after{width: 129px; bottom: 20px;}
+  .sub_visual h2+p{font-size: 1.4rem}
+
+  .sub_visual .lnb_area{ left: 2%; top: 3%;}
+  .sub_visual .lnb_area > li:first-child{width: 85px;}
+  .sub_visual .lnb_area > li{padding: 10px 5px; width: 110px;}
+  .sub_visual .lnb_area > li > a{font-size: 1.4rem;}
+  .sub_visual .lnb_area > li ol li a{font-size: 1.4rem;}
+  .sub_visual .lnb_area > li > a img{transform: scale(0.8);}
+}
+
+/*서브페이지 park02_entrance*/
+/*price*/
+#price{padding: 150px 0 75px;}
+#price h3::after{width: 156px;}
+#price .price_area{display: flex; flex-wrap: wrap; justify-content: space-between;}
+#price .left{width: 450px;}
+#price .left li:not(:first-child){padding: 50px 0 0;}
+#price .left p{display: flex; justify-content: space-between; font-size: 3rem;}
+#price .left p span{font-weight: 600;}
+#price .right li{padding: 10px 0 0;}
+#price .right li:first-child{padding: 0; font-weight: 600;}
+
+@media(max-width:1250px){
+  #price .price_area{gap: 30px 0;}
+  #price .price_area > ul{width: 100%;}
+}
+@media(max-width:900px){
+  #price{padding: 60px 0 30px;}
+  #price h3::after{width: 94px;}
+  #price .left li:not(:first-child){padding: 20px 0 0;}
+  #price .left p{font-size: 1.4rem;}
+  #price .right li{padding: 10px 0 0; font-size: 1.4rem;}
+}
+@media(max-width:500px){
+  #price h3::after{width: 83px;}
+}
+
+/*time*/
+#time{padding: 75px 0 150px;}
+#time h3::after{width: 156px;}
+#time table tr > *{padding: 50px 0; width: calc(100% / 4); text-align: center; font-weight: 600; font-size: 2rem; border: 0.5px solid var(--horse-gray);}
+#time table tr > th{background: #f2f2f2;}
+#time table .date th:first-child{background: #fff;}
+
+@media(max-width:900px){
+  #time{padding: 30px 0 60px;}
+  #time h3::after{width: 94px;}
+  #time table tr > *{padding: 30px 0; font-size: 1.4rem;}
+}
+@media(max-width:500px){
+  #time table tr > *{padding: 15px 0;}
+  #time h3::after{width: 83px;}
+}
+
+/*ban*/
+#ban{padding: 150px 0 360px; background: #fafafa;}
+#ban h3::after{width: 255px;}
+#ban .inner{position: relative; display: flex; flex-direction: column; gap: 10px 0;}
+#ban p{font-size: 1.4rem;}
+#ban .right{position: absolute; padding: 0 0 10px; right: 95px; top: 0;}
+#ban .right li{font-size: 1.8rem;}
+#ban .right li:not(:first-child){padding: 15px 0 0;}
+
+@media(max-width:1550px){
+  #ban .right{position: static;}
+}
+@media(max-width:900px){
+  #ban{padding: 60px 0;}
+  #ban h3::after{width: 154px;}
+  #ban h3+p{padding: 280px 0 0;}
+  #ban p{font-size: 1.2rem;}
+  #ban .right li{font-size: 1.4rem;}
+}
+@media(max-width:500px){
+  #ban h3::after{width: 137px;}
+}
+
+/*서브페이지 park03_traffic*/
+/*sub-visual*/
+.traffic_visual{background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url(../img/sub/sub_mb_traffic.jpg) no-repeat center / cover;}
+
+/*map_traffic*/
+#map_traffic{padding: 150px 0;}
+#map_traffic h3::after{width: 104px;}
+#map_traffic img{width: 100%;}
+
+@media(max-width:900px){
+  #map_traffic{padding: 60px 0;}
+  #map_traffic h3::after{width: 62.5px;}
+}
+@media(max-width:500px){
+  #map_traffic h3::after{width: 55.5px;}
+}
+
+/*info_traffic*/
+#info_traffic{padding: 150px 0; background: #fafafa;}
+#info_traffic h3::after{width: 241px;}
+#info_traffic ol{padding-left: 20px; list-style: circle;}
+#info_traffic ol li:not(:first-child){padding: 40px 0 0;}
+#info_traffic ol li{font-size: 2rem;}
+
+@media(max-width:900px){
+  #info_traffic{padding: 60px 0;}
+  #info_traffic h3::after{width: 145px;}
+  #info_traffic ol li:not(:first-child){padding: 20px 0 0;}
+  #info_traffic ol li{font-size: 1.4rem;}
+}
+@media(max-width:500px){
+  #info_traffic h3::after{width: 129px;}
+  #info_traffic ol li:not(:first-child){padding: 10px 0 0;}
+}
+
+/*howto*/
+#howto{padding: 150px 0;}
+#howto h3::after{width: 111px;}
+#howto .btn_list{width: 100%; display: flex;}
+#howto .btn_list button{width: calc(100% / 3); padding: 20px 0; font-family: var(--main-font); font-size: 2rem; font-weight: 500; border-bottom: 1px solid var(--horse-green); cursor: pointer; transition: all 0.5s;}
+#howto .btn_list button.active{font-weight: 600; background: var(--horse-green); color: #fff;}
+
+#howto .traffic_list{width: 100%; margin-top: 100px;}
+#howto .traffic_list .traffic{display: flex; flex-wrap: wrap; justify-content: space-between;}
+#howto .traffic_list .traffic > li{width: 500px;}
+#howto .traffic_list ul > li:not(:last-child){padding-bottom: 90px;}
+#howto .traffic_list h4{padding-bottom: 40px; font-weight: 600; font-size: 2rem;}
+#howto .traffic_list ol{padding-left: 20px; list-style: circle;}
+#howto .traffic_list ol li{font-size: 1.8rem;}
+#howto .traffic_list ol li:not(:first-child){padding-top: 30px;}
+
+#howto .traffic_list .car li:first-child h4{padding-bottom: 0;}
+
+#howto .traffic_list .bus ol{padding: 0; list-style: none;}
+#howto .traffic_list .bus ol table > *{text-align: center; font-size: 2rem;}
+#howto .traffic_list .bus ol table .date th:first-child{background: #fff;}
+#howto .traffic_list .bus ol table .date th:nth-child(2){width: auto;}
+#howto .traffic_list .bus ol table th{padding: 30px 0; width: 30%; border: 1px solid var(--horse-gray); background: #f2f2f2;}
+#howto .traffic_list .bus ol table td{padding: 30px 60px; border: 1px solid var(--horse-gray);}
+
+@media(max-width:1150px){
+  #howto .traffic_list .traffic > li{width: 380px;}
+}
+@media(max-width:900px){
+  #howto{padding: 60px 0;}
+  #howto h3::after{width: 66.5px;}
+  #howto .btn_list button{padding: 15px 0; font-size: 1.6rem;}
+
+  #howto .traffic_list{margin-top: 40px;}
+  #howto .traffic_list ul > li:not(:last-child){padding-bottom: 40px;}
+  #howto .traffic_list h4{padding-bottom: 20px;font-size: 1.8rem;}
+  #howto .traffic_list ol li{font-size: 1.6rem;}
+  #howto .traffic_list ol li:not(:first-child){padding-top: 10px;}
+
+  #howto .traffic_list .bus ol table{margin-bottom: 10px;}
+  #howto .traffic_list .bus ol table > *{font-size: 1.6rem;}
+  #howto .traffic_list .bus ol table th{padding: 20px 0;}
+  #howto .traffic_list .bus ol table td{padding: 20px 50px;}
+}
+@media(max-width:865px){
+  #howto .traffic_list .traffic > li{width: 320px;}
+}
+@media(max-width:710px){
+  #howto .traffic_list .traffic > li{width: 100%;}
+}
+@media(max-width:500px){
+  #howto h3::after{width: 59.5px;}
+  #howto .btn_list button{font-size: 1.4rem;}
+
+  #howto .traffic_list{margin-top: 30px;}
+  #howto .traffic_list ul > li:not(:last-child){padding-bottom: 30px;}
+  #howto .traffic_list h4{padding-bottom: 20px;font-size: 1.4rem;}
+  #howto .traffic_list ol li{font-size: 1.3rem;}
+
+  #howto .traffic_list .bus ol table > *{font-size: 1.4rem;}
+  #howto .traffic_list .bus ol table th{padding: 10px 0;}
+  #howto .traffic_list .bus ol table td{padding: 10px 40px;}
+}
+
+/*서브페이지 park03_parking*/
+/*map_parking*/
+#map_parking{padding: 150px 0 75px;}
+#map_parking h3::after{width: 137px;}
+#map_parking img{width: 100%;}
+
+@media(max-width:900px){
+  #map_parking{padding: 60px 0 30px;}
+  #map_parking h3::after{width: 62.5px;}
+}
+@media(max-width:500px){
+  #map_parking h3::after{width: 55.5px;}
+}
+
+/*info_parking*/
+#info_parking{padding: 75px 0 150px;}
+#info_parking h3::after{width: 170px;}
+#info_parking ol{padding-left: 20px; list-style: circle;}
+#info_parking ol li:not(:first-child){padding: 40px 0 0;}
+#info_parking ol li{font-size: 2rem;}
+
+@media(max-width:900px){
+  #info_parking{padding: 30px 0 60px;}
+  #info_parking h3::after{width: 145px;}
+  #info_parking ol li:not(:first-child){padding: 20px 0 0;}
+  #info_parking ol li{font-size: 1.4rem;}
+}
+@media(max-width:500px){
+  #info_parking h3::after{width: 129px;}
+  #info_parking ol li:not(:first-child){padding: 10px 0 0;}
+}
+
+/*address*/
+#address{padding: 150px 0; background: #fafafa;}
+#address h3::after{width: 111px;}
+#address ul li{padding: 30px 0 0; font-size: 2rem;}
+#address ul li:first-child{padding: 0;}
+
+@media(max-width:900px){
+  #address{padding: 60px 0;}
+  #address h3::after{width: 66.5px;}
+  #address ul li{padding: 20px 0 0; font-size: 1.4rem;}
+}
+@media(max-width:500px){
+  #address h3::after{width: 59.5px;}
+  #address ul li{padding: 15px 0 0;}
+}
+
+/*서브페이지 program*/
+/*program*/
+#program{padding: 150px 0;}
+#program h3::after{width: 299.5px;}
+#program .program_list{display: flex; flex-direction: column; gap: 80px 0;}
+#program .program_list > div{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.program_list > div > .img_box{width: 40%;}
+.program_list > div > .img_box img{width: 100%; height: 430px; object-fit: cover; border-radius: 10px;}
+.program_list > div > .txt_box{display: flex; width: 50%; padding: 5px 0; flex-direction: column; justify-content: space-between;}
+.program_list > div > .txt_box h4{font-weight: 600; font-size: 2.4rem}
+.program_list > div > .txt_box .main_txt{padding: 0 0 10px; font-size: 1.8rem; color: #4f4f4f;}
+.program_list > div > .txt_box .sub_txt li{display: flex; gap: 0 60px;}
+.program_list > div > .txt_box .sub_txt p{font-weight: 600; font-size: 1.8rem;}
+.program_list > div > .txt_box .sub_txt span{display: inline-block; padding: 0 0 10px;  font-weight: 400; font-size: 1.8rem;}
+.program_list > div > .txt_box .btn_more{display: block; width: 120px; padding: 10px 0; text-align: center; border: 1px solid var(--horse-green); border-radius: 10px; font-weight: 600; color: var(--horse-green); transition: all 0.5s;}
+.program_list > div > .txt_box .btn_more:hover{background: var(--horse-green); color: #fff;}
+
+@media(max-width:1400px){
+  .program_list > div > .txt_box{width: 55%;}
+  .program_list > div > .txt_box .sub_txt li{gap: 0 40px;}
+  .program_list > div > .txt_box .sub_txt p{font-size: 1.6rem;}
+  .program_list > div > .txt_box .sub_txt span{font-size: 1.6rem;}
+}
+@media(max-width:1100px){
+  #program .program_list{gap: 50px 0;}
+  #program .program_list > div{gap: 30px 0;}
+  .program_list > div > .img_box{width: 100%;}
+  .program_list > div > .txt_box{width: 100%; height: 330px; padding: 0;}
+  .program_list > div > .txt_box .btn_more{width: 100%;}
+}
+@media(max-width:900px){
+  #program{padding: 60px 0;}
+  #program h3::after{width: 179.7px;}
+  .program_list > div > .txt_box h4{font-size: 2rem;}
+  .program_list > div > .txt_box .main_txt{font-size: 1.6rem;}
+}
+@media(max-width:768px){
+  .program_list > div > .txt_box{height: 320px;}
+  .program_list > div > .txt_box h4{font-size: 1.6rem;}
+  .program_list > div > .txt_box .main_txt{font-size: 1.4rem;}
+  .program_list > div > .txt_box .sub_txt li{gap: 0 30px;}
+  .program_list > div > .txt_box .sub_txt p{font-size: 1.4rem; white-space: nowrap;}
+  .program_list > div > .txt_box .sub_txt span{font-size: 1.4rem;}
+  .program_list > div > .txt_box .btn_more{padding: 12px 0;}
+  .program_list > div > .txt_box .btn_more:hover{background: #fff; color: var(--horse-green);}
+}
+@media(max-width:565px){
+  #program .program_list{gap: 40px 0;}
+  #program .program_list > div{gap: 20px 0;}
+  .program_list > div > .img_box img{height: 170px;}
+  .program_list > div > .txt_box .main_txt{font-size: 1.3rem;}
+  .program_list > div > .txt_box .sub_txt li{gap: 0 20px;}
+  .program_list > div > .txt_box .sub_txt p{font-size: 1.3rem;}
+  .program_list > div > .txt_box .sub_txt span{font-size: 1.3rem;}
+  .program_list > div > .txt_box .btn_more{padding: 13.5px 0; font-size: 1.4rem;}
+}
+@media(max-width:500px){
+  #program h3::after{width: 159.7px;}
+  .program_list > div > .txt_box h4{font-size: 1.4rem;}
+}
+
+/*서브페이지 ground02_reserve*/
+/*ground*/
+#ground{padding: 150px 0;}
+#ground h3::after{width: 299.5px;}
+#ground .ground_list{display: flex; flex-direction: column; gap: 80px 0;}
+#ground .ground_list > div{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.ground_list > div > .img_box{width: 40%;}
+.ground_list > div > .img_box img{width: 100%; height: 365px; object-fit: cover; border-radius: 10px;}
+.ground_list > div > .txt_box{display: flex; width: 50%; padding: 5px 0; flex-direction: column; justify-content: space-between;}
+.ground_list > div > .txt_box h4{font-weight: 600; font-size: 2.4rem}
+.ground_list > div > .txt_box .main_txt{padding: 0 0 10px; font-size: 1.8rem; color: #4f4f4f;}
+.ground_list > div > .txt_box .sub_txt li{display: flex; gap: 0 60px;}
+.ground_list > div > .txt_box .sub_txt p{font-weight: 600; font-size: 1.8rem;}
+.ground_list > div > .txt_box .sub_txt span{display: inline-block; padding: 0 0 10px;  font-weight: 400; font-size: 1.8rem;}
+.ground_list > div > .txt_box .btn_list{display: flex; gap: 0 20px;}
+.ground_list > div > .txt_box .btn_more{display: block; width: 120px; padding: 10px 0; text-align: center; border: 1px solid var(--horse-green); border-radius: 10px; font-weight: 600; color: var(--horse-green); transition: all 0.5s;}
+.ground_list > div > .txt_box .btn_more:hover{background: var(--horse-green); color: #fff;}
+
+.ground_list > div > .txt_box .btn_reserve:hover{background: #fff; border: 1px solid var(--horse-green); color: var(--horse-green);}
+.ground_list > div > .txt_box .btn_reserve{display: block; width: 120px; padding: 10px 0; text-align: center; background: var(--horse-green); border: 1px solid var(--horse-green); color: #fff; border-radius: 10px; font-weight: 600; transition: all 0.5s;}
+
+@media(max-width:1400px){
+  .ground_list > div > .txt_box{width: 55%;}
+  .ground_list > div > .txt_box .sub_txt li{gap: 0 40px;}
+  .ground_list > div > .txt_box .sub_txt p{font-size: 1.6rem;}
+  .ground_list > div > .txt_box .sub_txt span{font-size: 1.6rem;}
+}
+@media(max-width:1100px){
+  #ground .ground_list{gap: 50px 0;}
+  #ground .ground_list > div{gap: 30px 0;}
+  .ground_list > div > .img_box{width: 100%;}
+  .ground_list > div > .txt_box{width: 100%; height: 250px; padding: 0;}
+  .ground_list > div > .txt_box .btn_more{width: 100%;}
+  .ground_list > div > .txt_box .btn_reserve{width: 100%;}
+}
+@media(max-width:900px){
+  #ground{padding: 60px 0;}
+  #ground h3::after{width: 179.7px;}
+  .ground_list > div > .txt_box h4{font-size: 2rem;}
+  .ground_list > div > .txt_box .main_txt{font-size: 1.6rem;}
+}
+@media(max-width:768px){
+  .ground_list > div > .txt_box{height: 230px;}
+  .ground_list > div > .txt_box h4{font-size: 1.6rem;}
+  .ground_list > div > .txt_box .main_txt{font-size: 1.4rem;}
+  .ground_list > div > .txt_box .sub_txt li{gap: 0 30px;}
+  .ground_list > div > .txt_box .sub_txt p{font-size: 1.4rem; white-space: nowrap;}
+  .ground_list > div > .txt_box .sub_txt span{font-size: 1.4rem;}
+  .ground_list > div > .txt_box .btn_more{padding: 12px 0;}
+  .ground_list > div > .txt_box .btn_more:hover{background: #fff; color: var(--horse-green);}
+  .ground_list > div > .txt_box .btn_reserve{padding: 12px 0;}
+  .ground_list > div > .txt_box .btn_reserve:hover{background: var(--horse-green); color: #fff;}
+}
+@media(max-width:565px){
+  #ground .ground_list{gap: 40px 0;}
+  #ground .ground_list > div{gap: 20px 0;}
+  .ground_list > div > .img_box img{height: 170px;}
+  .ground_list > div > .txt_box .main_txt{font-size: 1.3rem;}
+  .ground_list > div > .txt_box .sub_txt li{gap: 0 20px;}
+  .ground_list > div > .txt_box .sub_txt p{font-size: 1.3rem;}
+  .ground_list > div > .txt_box .sub_txt span{font-size: 1.3rem;}
+  .ground_list > div > .txt_box .btn_more{padding: 13.5px 0; font-size: 1.4rem;}
+  .ground_list > div > .txt_box .btn_reserve{padding: 13.5px 0; font-size: 1.4rem;}
+}
+@media(max-width:500px){
+  #ground h3::after{width: 159.7px;}
+  .ground_list > div > .txt_box h4{font-size: 1.4rem;}
+}
